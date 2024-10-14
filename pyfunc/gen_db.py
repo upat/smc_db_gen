@@ -90,7 +90,8 @@ class GenerateDB(CommonBaseClass):
 		for _index, _path in enumerate(self._mpcpl_read(), 1):
 			_plmembid_values = ','.join([ # VALUES部分の生成
 				str(_plmembid + _index),
-				str(_plid), str(_index),
+				str(_plid),
+				str(_index),
 				_uuid,
 				_path])
 			_plmembid_command = self._create_sql('playlist_members', _plmembid_values)
