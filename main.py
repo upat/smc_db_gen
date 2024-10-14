@@ -1,4 +1,4 @@
-from py_func.gen_db import GenerateDB
+from pyfunc.gen_db import GenerateDB
 
 def main():
 	gdb = GenerateDB(GenerateDB.TYPE_FILE)
