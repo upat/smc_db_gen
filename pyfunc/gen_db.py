@@ -87,10 +87,10 @@ class GenerateDB(CommonBaseClass):
 		# playlist_membersテーブルの_id取得→データ追加
 		_smc_db_cur.execute('SELECT _id FROM playlist_members')
 		_plmembid = self._getid_max(_smc_db_cur.fetchall())
-		for _index, _path in enumerate(self._mpcpl_read()):
+		for _index, _path in enumerate(self._mpcpl_read(), 1):
 			_plmembid_values = ','.join([ # VALUES部分の生成
-				str(_plmembid + _index + 1),
-				str(_plid), str(_index + 1),
+				str(_plmembid + _index),
+				str(_plid), str(_index),
 				_uuid,
 				_path])
 			_plmembid_command = self._create_sql('playlist_members', _plmembid_values)
