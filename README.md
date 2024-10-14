@@ -26,7 +26,7 @@ Music Centerのプレイリストは.db形式のファイルで管理されて�
 1. Music Centerのアプリは念のため終了しておく。
 1. 以下のファイルをこのリポジトリをチェックアウトしたフォルダにコピー。  
 `PC\SO-53C\内部共有ストレージ\MusicCenter\metadata.db`
-1. `main.bat` に任意のMPC-HC/MPC-BEのプレイリスト(.mpcpl形式)をD&D。
+1. `run.bat` に任意のMPC-HC/MPC-BEのプレイリスト(.mpcpl形式)をD&D。
 1. 処理が完了したら`使い方5.`でコピーしてきたファイルをコピー元へ上書き。
 
 使用上の注意
